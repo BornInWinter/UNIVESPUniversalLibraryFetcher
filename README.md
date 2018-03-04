@@ -7,8 +7,6 @@
   Bash <br/>
   
 # Desenvolvimento
-  Manter o código simples para que todos os alunos possam contribuir e com o tempo ir refinando, de modo a acompanhar os estudos. <br/>
-
   Ler configuração de credenciais e lista de livros (Feito) <br/>
   Logar na biblioteca (Feito) <br/>
   Baixar PDFs da Pearson (Em Adaptação) <br/>
@@ -20,3 +18,6 @@
   Converter imagens para PDF (Em Adaptação) <br/>
   Converter HTML para PDF (Não Feito) <br/>
   Dinamizar o tempo esperado para as páginas carregarem (setTimeout) <br/>
+
+# Contribuir  
+  Manter o código simples para que todos os alunos possam contribuir e com o tempo ir refinando, de modo a acompanhar os estudos. <br/>
