@@ -9,6 +9,9 @@
 # Desenvolvimento
   Ler configuração de credenciais e lista de livros (Feito) <br/>
   Logar na biblioteca (Feito) <br/>
+  Encontar primeira e última página Pearson (Em Adaptação) <br/>
+  Encontar primeira e última página Minha Biblioteca (Em Adaptação) <br/>
+  Encontar primeira e última página E-Volution (Não Feito) <br/>
   Baixar PDFs da Pearson (Em Adaptação) <br/>
   Baixar EPUBs da Pearson (Não Feito) <br/>
   Baixar PDFs da Minha Biblioteca (Em Adaptação) <br/>
