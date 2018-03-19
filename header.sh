@@ -1,2 +1,2 @@
-source errors.sh
-source conf/conf.sh
+source constants/errors.sh
+source conf/login
