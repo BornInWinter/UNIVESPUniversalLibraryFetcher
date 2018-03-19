@@ -8,7 +8,7 @@ do
 	auth=`echo $line | cut -d '|' -f 2`
 	titl=`echo $line | cut -d '|' -f 3`
 
-	if [ "$link" == "" ] || [ "$link" == "https://"* ] || [ "$link" == *"/" ]
+	if [ "$link" == "" || "$link" != "https://"* || "$link" == *"/" ]
         then
                 echo -e "\033[1;31m${error[1]}\033[0m" && exit 1
         elif [ "$auth" == "" ]
