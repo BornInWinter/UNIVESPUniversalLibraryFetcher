@@ -17,10 +17,11 @@ function login(user, pass) {
 
 }
 
+function setLibrary(libr, user, pass) {
 
-function setLibrary(lib, usr, psw) {
+	var returnMsg = "";
 
-	switch(lib) {
+	switch(libr) {
 
 		case 'pearson' :
 	
@@ -28,17 +29,17 @@ function setLibrary(lib, usr, psw) {
 		
 				if (!isLogged(page.title)) { 
 				
-					login(usr, psw); 
+					login(user, pass); 
 			
 					setTimeout(function() {
 			
-						isLogged(page.title) ? console.log('Logged!') : phantom.exit(2);
+						isLogged(page.title) ? returnMsg = "\033[1m=> Logged!\033[0m" : phantom.exit(2);
 													
 					}, 5000);
 
 				} else {
 
-					console.log('Logged!');
+					returnMsg = "\033[1m=> Logged!\033[0m";
 
 				}
 		
@@ -46,23 +47,23 @@ function setLibrary(lib, usr, psw) {
 
 			break;
 
-		case 'mylib' :
+		case 'mb' :
 		
 			page.open('https://login.univesp.br/simplesaml/module.php/core/mb.php', function() {
 		
 				if (!isLogged(page.title)) { 
 				
-					login(usr, psw); 
+					login(user, pass); 
 			
 					setTimeout(function() {
 							
-						isLogged(page.title) ? console.log('Logged!') : phantom.exit(2);
+						isLogged(page.title) ? returnMsg = "\033[1m=> Logged!\033[0m" : phantom.exit(2);
 								
 					}, 5000);
 
 				} else {
 
-					console.log('Logged!');
+					console.log("\033[1m=> Logged!\033[0m");
 
 				}
 	
@@ -100,17 +101,17 @@ function setLibrary(lib, usr, psw) {
 			
 							if (!isLogged(page.title)) { 
 							
-								login(usr, psw);
+								login(user, pass);
 
 								setTimeout(function() {
 							
-									isLogged(page.title) ? console.log('Logged!') : phantom.exit(2);		
+									isLogged(page.title) ? console.log("\033[1m=> Logged!\033[0m") : phantom.exit(2);		
 
 								}, 10000);
 						
 							} else {
 
-								console.log('Logged!');
+								console.log("\033[1m=> Logged!\033[0m");
 
 							}
 					
@@ -125,7 +126,7 @@ function setLibrary(lib, usr, psw) {
 			break;
 
 		default :
-			phantom.exit(1);
+			phantom.exit(3);
 
 	}
 
